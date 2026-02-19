@@ -1028,11 +1028,7 @@ class CppException extends EmscriptenEH {
 
 // end include: runtime_exceptions.js
 function findWasmBinary() {
-  var f = "powder.wasm";
-  if (!isDataURI(f)) {
-    return locateFile(f);
-  }
-  return f;
+  return "https://cdn.jsdelivr.net/gh/monkey-craft/powder-toy/powder.wasm";
 }
 
 var wasmBinaryFile;
